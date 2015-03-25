@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background_small"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.netter.phonesilent.MainActivity" >
+    
+     <TextView
+         android:id="@+id/textViewTime"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_below="@+id/buttonSettings"
+         android:layout_marginLeft="34dp"
+         android:gravity="right"
+         android:text="Time:"
+         android:textAppearance="?android:attr/textAppearanceSmall"
+         android:textColor="@android:color/white"
+         android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewTime"
+        android:layout_below="@+id/textViewTime"
+        android:layout_marginTop="24dp"
+        android:text="Saved\nLocation:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" 
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/TextViewSetLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLocation"
+        android:layout_alignBottom="@+id/textViewLocation"
+        android:layout_alignLeft="@+id/TextViewSetTime"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextViewSetMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewLocation"
+        android:layout_toRightOf="@+id/TextViewSetHour"
+        android:gravity="right"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" 
+        android:ems="2"/>
+
+    <TextView
+        android:id="@+id/TextViewSetHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textViewLocation"
+        android:layout_marginLeft="29dp"
+        android:layout_toRightOf="@+id/textViewTime"
+        android:gravity="right"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" 
+        android:ems="2"/>
+
+
+   
+
+    <TextView
+        android:id="@+id/TextViewSetLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textViewLocation"
+        android:layout_alignBottom="@+id/textViewLocation"
+        android:layout_alignRight="@+id/TextViewSetLong"
+        android:gravity="left"
+        android:text="Lat: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/TextViewSetLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewLocation"
+        android:layout_toRightOf="@+id/textViewLocation"
+        android:gravity="left"
+        android:text="Long: "
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/settings_button2" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonStartStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TextViewSetLong"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/toggle_button"
+        android:textOff=" "
+        android:textOn=" " />
+
+</RelativeLayout>

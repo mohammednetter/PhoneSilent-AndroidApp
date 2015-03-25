@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background3" >
+
+    <EditText
+        android:id="@+id/editTextCurrLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSelectLoc"
+        android:layout_alignLeft="@+id/textViewHeader"
+        android:ems="10"
+        android:text="Get Current Location ..."
+        android:textColor="@android:color/white"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextHour"
+        android:layout_alignBottom="@+id/editTextHour"
+        android:layout_toRightOf="@+id/editTextHour"
+        android:text=":"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewSelectLoc"
+        android:layout_marginTop="63dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:ems="2"
+        android:inputType="time"
+        android:text="00"
+        android:textColor="@android:color/white" />
+
+    <EditText
+        android:id="@+id/editTextHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewSelectTime"
+        android:layout_alignLeft="@+id/editTextCurrLoc"
+        android:ems="2"
+        android:inputType="time"
+        android:text="18"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textViewHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp"
+        android:text="SETTINGS"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewSelectTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTextMin"
+        android:layout_alignBottom="@+id/editTextMin"
+        android:layout_alignRight="@+id/textViewSelectLoc"
+        android:gravity="right"
+        android:text="Time:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonGetLoc"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editTextCurrLoc"
+        android:layout_toRightOf="@+id/editTextCurrLoc"
+        android:background="@drawable/location_icon_new_small" />
+
+    <TextView
+        android:id="@+id/textViewSelectLoc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textViewHeader"
+        android:layout_marginTop="74dp"
+        android:gravity="right"
+        android:text="Location:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
